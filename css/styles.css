@@ -1,0 +1,235 @@
+/* Колір вторинний чорний color: #212121; */
+/* Колір основний сірий блідий color: #757575; */
+/* Колір білий color: #FFFFFF */
+/* accent color: #2196F3; */
+/* Колір адреси світло сірий color:rgba(255, 255, 255, 0.6); */
+/* вторинний колір фону background: #F5F5F5; */
+
+:root {
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--accent-color: #2196F3;
+--white-color: #FFFFFF;
+--black-color: #000;
+--button-hero-active: 
+}
+
+
+body {
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.page-header.link:hover, 
+.page-header.link:focus {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+/* Питання: я для лого уточнила, що техт-декорейшин: нон, але чому він так і залишається підкресленим? */
+/* Logo */
+.logo-web {
+    color:var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+    text-decoration: none;
+   }
+
+.logo-studio {
+    color: var(--black-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+
+/* Site nav */
+.site-nav .link {
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+
+
+/* Contact */
+.contact a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.contact {
+color: var(--primary-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus, 
+.contact .link:hover,
+.contact .link:focus {
+color: var(--accent-color);
+}
+
+.link.current {
+    color: var(--accent-color);
+}
+/* Hero*/
+.hero {
+    color: var(--white-color);
+    background-color: #2F303A;;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Button */
+.button {
+font-family: 'Roboto';
+color: var(--white-color);
+background-color: var(--accent-color);
+cursor: pointer;
+}
+
+.button.primary {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+.button.filter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    }
+.button.simple {
+    background-color: #F5F4FA;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Section */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    }
+ /*Work */
+ .work-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+ }
+ /* Team */
+ .about-team {
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+ }
+
+.team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+/* Питання: Я задала для team-proffesion колір окремо, чому він не застосовується? */
+.team.proffesion {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+/* Footer */
+
+.logo-studio-footer {
+    color: var(--white-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.page-footer .link:hover,
+.page-footer .link:focus {
+    color: var(--accent-color);
+}
+
+.page-footer {
+    background-color: #2F303A;
+}
+
+.address-location {
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+
+/* Portfolio */
+
+.filter .link:hover, .filter .link:focus {
+    color: var(--accent-color);
+}
+.filter link {
+color: var(--white-color);
+background-color: var(--accent-color);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+}
+/* Не розумію, що я робою не так, чому стилі не підключаються? */
+.portfolio title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio text {
+    color:#757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+}
