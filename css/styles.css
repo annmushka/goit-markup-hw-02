@@ -11,7 +11,10 @@
 --accent-color: #2196F3;
 --white-color: #FFFFFF;
 --black-color: #000;
---button-hero-active: 
+--background-color-hero: #2F303A;
+--background-color-grey: #F5F4FA;
+--background-color-finish: #2F303A;
+--color-address: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -19,40 +22,40 @@ body {
     background-color: var(--white-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-}
-
-.page-header.link:hover, 
-.page-header.link:focus {
-    color: var(--accent-color);
 }
 
 .list {
-    list-style: none;
+ list-style: none;
 }
-/* Питання: я для лого уточнила, що техт-декорейшин: нон, але чому він так і залишається підкресленим? */
+
 /* Logo */
-.logo-web {
-    color:var(--accent-color);
+
+.web {
+    color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19; 
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-decoration: none;
-   }
-
+}
 .logo-studio {
     color: var(--black-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
-
+.page-header.link:hover,
+.page-header.link:focus {
+    color: var(--accent-color);
+}
 
 /* Site nav */
-.site-nav .link {
+
+.site-nav {
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -60,35 +63,32 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+.current {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
 
 
 /* Contact */
-.contact a {
+
+.contact  {
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
-.contact {
-color: var(--primary-text-color);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-}
 
-.site-nav .link:hover, 
-.site-nav .link:focus, 
-.contact .link:hover,
-.contact .link:focus {
-color: var(--accent-color);
-}
-
-.link.current {
-    color: var(--accent-color);
-}
 /* Hero*/
 .hero {
     color: var(--white-color);
-    background-color: #2F303A;;
+    background-color: var(--background-color-hero);
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,40 +99,60 @@ color: var(--accent-color);
 
 /* Button */
 .button {
-font-family: 'Roboto';
-color: var(--white-color);
-background-color: var(--accent-color);
-cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .button.primary {
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
 }
 
 .button.filter {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
-    }
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+}
+
 .button.simple {
-    background-color: #F5F4FA;
-    color: #212121;
+    color: var(--title-text-color);
+    background-color: var(--background-color-grey);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
+    border-radius: 4px;
+    border: none;
 }
 
 
-/* Section */
+/* Наші переваги/Section */
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     }
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
  /*Work */
  .work-title {
     color: var(--title-text-color);
@@ -140,34 +160,42 @@ cursor: pointer;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
- }
- /* Team */
- .about-team {
-    background-color: #F5F4FA;
-    color: var(--title-text-color);
+    letter-spacing: 0.03em;
  }
 
-.team {
+ /* Team */
+ .team {
+    background-color: var(--background-color-team);
+ }
+ .about-team {
+    background-color: var(--background-color-team);
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-}
+    letter-spacing: 0.03em;
+ }
 
 .team-title {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em; 
 }
-/* Питання: Я задала для team-proffesion колір окремо, чому він не застосовується? */
-.team.proffesion {
+.team-proffesion {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 /* Footer */
+.finish {
+    background-color: var(--background-color-finish);
+}
 
 .logo-studio-footer {
     color: var(--white-color);
@@ -175,60 +203,52 @@ cursor: pointer;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
-.page-footer .link:hover,
-.page-footer .link:focus {
+.link.web:hover,
+.link.web:focus {
     color: var(--accent-color);
-}
-
-.page-footer {
-    background-color: #2F303A;
 }
 
 .address-location {
     color: var(--white-color);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     text-decoration: none;
+    letter-spacing: 0.03em;
 }
-.address-link {
-    color: rgba(255, 255, 255, 0.6);
+
+.address {
+    color: var(--color-adress);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+
 }
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
+
 
 
 /* Portfolio */
-
-.filter .link:hover, .filter .link:focus {
-    color: var(--accent-color);
-}
-.filter link {
-color: var(--white-color);
-background-color: var(--accent-color);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-}
-/* Не розумію, що я робою не так, чому стилі не підключаються? */
-.portfolio title {
+.name-portfolio {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    
 }
-.portfolio text {
-    color:#757575;
-    font-weight: 400;
+
+.text-portfolio {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1,88;
     letter-spacing: 0.03em;
